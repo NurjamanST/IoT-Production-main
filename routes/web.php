@@ -19,6 +19,9 @@ Route::get('/', function () {
 Route::get('/house', function () {
     return view('house');
 });
+Route::get('/farm', function () {
+    return view('farm');
+});
 Route::get('/invalid', function () {
     return view('invalid');
 });
