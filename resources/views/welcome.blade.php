@@ -131,16 +131,16 @@ html {
             <img src="{{url('image/banner/1.png')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/banner/2.png'}}" class="d-block w-100" alt="...">
+            <img src="{{url('image/banner/2.png')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/banner/2.png'}}" class="d-block w-100" alt="...">
+            <img src="{{url('image/banner/2.png')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/banner/2.png'}}" class="d-block w-100" alt="...">
+            <img src="{{url('image/banner/2.png')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/banner/2.png'}}" class="d-block w-100" alt="...">
+            <img src="{{url('image/banner/2.png')}}" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
