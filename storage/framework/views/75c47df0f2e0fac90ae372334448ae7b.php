@@ -73,7 +73,7 @@
       <p class="mb-3">cs@aktara.id<br>aktaraurus@gmail.com</p>
 
       <p class="mb-1"><strong>Kontak Kerja Sama :</strong></p>
-      <p class="mb-0">+62 877 6207 6911 (Pusat)<br>+62 838-1362-1355 (Pangandaran)</p>
+      <p class="mb-0">+62 877 6207 6911 (Pusat)<br>+62 838-1362-1355 (Priangan Timur)</p>
     </div>
   </div>
 

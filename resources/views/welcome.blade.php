@@ -291,18 +291,18 @@ html {
       <span>MITRA KAMI</span>
         <div class="container-fluid py-4 my-5">
             <div class="d-flex justify-content-center flex-wrap gap-4">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
             </div>
         </div>
     </div>
@@ -328,7 +328,7 @@ html {
         </div>
         <!-- Bagian Gambar -->
         <div class="col-lg-4 text-center">
-          <img src="image/logo.png" alt="Logo IoT Productions" class="img-fluid img-circle mx-auto d-block">
+          <img src="image/logo/logo.png" alt="Logo IoT Productions" class="img-fluid img-circle mx-auto d-block">
         </div>
       </div>
     </div>
