@@ -128,19 +128,19 @@ html {
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="{{url('image/banner/1.png')}}" class="d-block w-100" alt="...">
+            <img src="{{('image/Banner/1.png')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/banner/2.png')}}" class="d-block w-100" alt="...">
+            <img src="{{url('image/Banner/2.png')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/banner/2.png')}}" class="d-block w-100" alt="...">
+            <img src="{{url('image/Banner/3.png')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/banner/2.png')}}" class="d-block w-100" alt="...">
+            <img src="{{url('image/Banner/4.png')}}" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/banner/2.png')}}" class="d-block w-100" alt="...">
+            <img src="{{url('image/Banner/5.png')}}" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -174,7 +174,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/Produk/Smart Home Starter Kit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="{{ url('/image/Produk/smarthome-starterkit.jpg') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -184,7 +184,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/Produk/Smart Home Training Kit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="{{ url('/image/Produk/smarthome-trainingkit.jpg') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -213,7 +213,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/Produk/Smart Farm Starterkit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="/image/Produk/smartfarm-starterkit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -223,7 +223,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/Produk/Smart Farm Training kit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="{{ url('/image/Produk/smartfarm-trainingkit.jpg') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -291,18 +291,18 @@ html {
       <span>MITRA KAMI</span>
         <div class="container-fluid py-4 my-5">
             <div class="d-flex justify-content-center flex-wrap gap-4">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="image/logo/logo.png" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
             </div>
         </div>
     </div>
@@ -318,17 +318,12 @@ html {
         <div class="col-lg-8">
           <h4 class="fw-bold text-uppercase mb-3">Tentang IoT Productions PT AKTARA ACADEMY</h4>
           <p class="text-justify lh-lg">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur sit amet ligula id mauris malesuada semper. 
-            Nullam vitae orci nec arcu tristique vestibulum. Morbi sed magna vel erat fermentum hendrerit. 
-            Quisque maximus, sapien in facilisis pharetra, lorem velit efficitur metus, at tincidunt nulla magna nec orci. 
-            Integer nec turpis vel orci tristique blandit. Vivamus condimentum odio in arcu porttitor, sit amet dictum erat accumsan. 
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer ut ornare nisl. Pellentesque a semper ligula, 
-            vitae dignissim libero. 
+            IoT Productions by PT Aktara Academy merujuk pada divisi atau unit khusus di bawah PT Aktara Academy yang berfokus pada pengembangan, produksi, dan implementasi solusi berbasis Internet of Things (IoT). IoT adalah teknologi yang memungkinkan perangkat fisik terhubung ke internet dan saling berkomunikasi, sehingga dapat mengumpulkan, mengirim, dan menganalisis data secara real-time. Dengan teknologi ini, perangkat dapat diotomatisasi, dikendalikan jarak jauh, dan diintegrasikan dengan sistem lain untuk meningkatkan efisiensi, kenyamanan, dan keamanan. IoT Productions menyediakan berbagai produk dan layanan IoT yang dapat diaplikasikan di berbagai sektor, seperti smart home, smart city, smart presence RFID, dll. 
           </p>
         </div>
         <!-- Bagian Gambar -->
         <div class="col-lg-4 text-center">
-          <img src="image/logo/logo.png" alt="Logo IoT Productions" class="img-fluid img-circle mx-auto d-block">
+          <img src="{{ url('image/Logo/logo.png') }}" alt="Logo IoT Productions" class="img-fluid img-circle mx-auto d-block">
         </div>
       </div>
     </div>
@@ -351,7 +346,7 @@ html {
                 </h2>
                 <div id="faqCollapse1" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        IoT-Pro Aktara adalah ...
+                        IoT Productions by PT Aktara Academy merujuk pada divisi atau unit khusus di bawah PT AKTARA yang berfokus pada pengembangan, produksi, dan implementasi solusi berbasis Internet of Things (IoT).
                     </div>
                 </div>
             </div>
@@ -365,7 +360,14 @@ html {
                 </h2>
                 <div id="faqCollapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Produk yang disediakan meliputi ...
+                      Kami memiliki beberapa produk yaitu:
+                      {{-- list produk: --}}
+                      <ul>
+                        <li>Alat Peraga (Smart Home, Smart Farm, Presence RFID)</li>
+                        <li>Starter Kit (Smart Home, Smart Farm, Presence RFID)</li>
+                        <li>IoT Learning Kit (Media Belajar IoT Basic)</li>
+                        <li>Dan beberapa teknologi lainnya</li>
+                      </ul>                
                     </div>
                 </div>
             </div>
@@ -379,7 +381,7 @@ html {
                 </h2>
                 <div id="faqCollapse3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Ya, kami menyediakan pricelist lengkap ...
+                      Pricelist dapat menghubungi kami lebih lanjut karena harga device berfluktuatif dan menyesuaikan kebutuhan customer.
                     </div>
                 </div>
             </div>
@@ -393,7 +395,7 @@ html {
                 </h2>
                 <div id="faqCollapse4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Biaya tambahan dapat meliputi ...
+                      Terdapat biaya manage service yang dibayarkan setiap tahun dan biaya onsite service untuk biaya instalasi (akomodasi, perjalanan, dsb).
                     </div>
                 </div>
             </div>
@@ -407,7 +409,7 @@ html {
                 </h2>
                 <div id="faqCollapse5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Perawatan yang disarankan yaitu ...
+                      Perawatan yang perlu dilakukan yaitu dengan membersihkan sensor dari debu dan kotoran setidaknya satu tahun sekali. Selain itu, pada beberapa jenis sensor juga perlu dikalibrasi kembali agar hasil pembacaan tetap akurat.
                     </div>
                 </div>
             </div>
@@ -421,7 +423,7 @@ html {
                 </h2>
                 <div id="faqCollapse6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        Untuk pemasangan disarankan oleh tim kami ...
+                      Instalasi bersifat opsional, artinya bisa dipasang oleh Tim IoT-Pro Aktara maupun dipasang sendiri. Jika ingin dipasang sendiri nantinya akan difasilitasi video instalasi dari IoT-Pro Aktara.
                     </div>
                 </div>
             </div>
@@ -435,7 +437,7 @@ html {
                 </h2>
                 <div id="faqCollapse7" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        tentu ...
+                      Produk IoT-Pro Aktara memiliki garansi 6 bulan.
                     </div>
                 </div>
             </div>
@@ -449,7 +451,7 @@ html {
                 </h2>
                 <div id="faqCollapse8" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        tentunya hanya dengan rentan waktu ...
+                      Apabila seluruh komponen produk tersedia, produk dapat dikirimkan setelah 2 - 3 minggu masa produksi.
                     </div>
                 </div>
             </div>
@@ -463,7 +465,7 @@ html {
                 </h2>
                 <div id="faqCollapse9" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
-                        08...
+                      Silahkan hubungi nomor whatsapp berikut : +62 813-1226-1335 (IoT-Pro Aktara Team)
                     </div>
                 </div>
             </div>
@@ -478,7 +480,7 @@ html {
 
     <!-- Bagian Gambar -->
     <div class="container-fluid p-0">
-      <img src="image/1.png" alt="Team Image" class="img-fluid w-100">
+      <img src="{{ ('image/tim.png') }}" alt="Team Image" class="img-fluid w-100">
   </div>
 
 <x-footer></x-footer>
