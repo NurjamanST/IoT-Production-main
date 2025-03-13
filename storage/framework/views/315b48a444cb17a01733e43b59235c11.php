@@ -107,7 +107,16 @@ html {
     </style>
 </head>
 <body>
-  <x-navbar>
+  <?php if (isset($component)) { $__componentOriginalb9eddf53444261b5c229e9d8b9f1298e = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalb9eddf53444261b5c229e9d8b9f1298e = $attributes; } ?>
+<?php $component = App\View\Components\Navbar::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
+<?php $component->withName('navbar'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag && $constructor = (new ReflectionClass(App\View\Components\Navbar::class))->getConstructor()): ?>
+<?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?>
     <ul class="navbar-nav fw-bold ms-auto">
       <li class="nav-item"><a class="nav-link" href="#home">HOME</a></li>
       <li class="nav-item"><a class="nav-link" href="#produk">PRODUK</a></li>
@@ -115,8 +124,35 @@ html {
       <li class="nav-item"><a class="nav-link" href="#tentang">ABOUT US</a></li>
       <li class="nav-item"><a class="nav-link" href="#faq">FAQ's</a></li>
       </ul>
-  </x-navbar>
-  <x-wa></x-wa>
+   <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalb9eddf53444261b5c229e9d8b9f1298e)): ?>
+<?php $attributes = $__attributesOriginalb9eddf53444261b5c229e9d8b9f1298e; ?>
+<?php unset($__attributesOriginalb9eddf53444261b5c229e9d8b9f1298e); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalb9eddf53444261b5c229e9d8b9f1298e)): ?>
+<?php $component = $__componentOriginalb9eddf53444261b5c229e9d8b9f1298e; ?>
+<?php unset($__componentOriginalb9eddf53444261b5c229e9d8b9f1298e); ?>
+<?php endif; ?>
+  <?php if (isset($component)) { $__componentOriginalc5ff32f15cd965fb98d4c542311a4e45 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginalc5ff32f15cd965fb98d4c542311a4e45 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.wa','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
+<?php $component->withName('wa'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
+<?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?> <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginalc5ff32f15cd965fb98d4c542311a4e45)): ?>
+<?php $attributes = $__attributesOriginalc5ff32f15cd965fb98d4c542311a4e45; ?>
+<?php unset($__attributesOriginalc5ff32f15cd965fb98d4c542311a4e45); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginalc5ff32f15cd965fb98d4c542311a4e45)): ?>
+<?php $component = $__componentOriginalc5ff32f15cd965fb98d4c542311a4e45; ?>
+<?php unset($__componentOriginalc5ff32f15cd965fb98d4c542311a4e45); ?>
+<?php endif; ?>
   <section id="home">
     <div id="carouselExampleIndicators" class="carousel slide">
         <div class="carousel-indicators">
@@ -128,19 +164,19 @@ html {
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="{{('image/Banner/1.png')}}" class="d-block w-100" alt="...">
+            <img src="<?php echo e(('image/Banner/1.png')); ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/Banner/2.png')}}" class="d-block w-100" alt="...">
+            <img src="<?php echo e(url('image/Banner/2.png')); ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/Banner/3.png')}}" class="d-block w-100" alt="...">
+            <img src="<?php echo e(url('image/Banner/3.png')); ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/Banner/4.png')}}" class="d-block w-100" alt="...">
+            <img src="<?php echo e(url('image/Banner/4.png')); ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="{{url('image/Banner/5.png')}}" class="d-block w-100" alt="...">
+            <img src="<?php echo e(url('image/Banner/5.png')); ?>" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -174,7 +210,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ url('image/Produk/smarthome-starterkit.jpg') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="<?php echo e(url('/image/Produk/smarthome-starterkit.jpg')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -184,7 +220,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ url('image/Produk/smarthome-trainingkit.jpg') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="<?php echo e(url('/image/Produk/smarthome-trainingkit.jpg')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -213,7 +249,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ url('image/Produk/smartfarm-starterkit.jpg') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="/image/Produk/smartfarm-starterkit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -223,7 +259,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ url('image/Produk/smartfarm-trainingkit.jpg') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="<?php echo e(url('/image/Produk/smartfarm-trainingkit.jpg')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -252,7 +288,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ url(image/Produk/RFID Starterkit.jpg) }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="/image/Produk/RFID Starterkit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -262,7 +298,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ url(image/Produk/RFID Training Kit.jpg) }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="/image/Produk/RFID Training Kit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -291,18 +327,18 @@ html {
       <span>MITRA KAMI</span>
         <div class="container-fluid py-4 my-5">
             <div class="d-flex justify-content-center flex-wrap gap-4">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
             </div>
         </div>
     </div>
@@ -323,7 +359,7 @@ html {
         </div>
         <!-- Bagian Gambar -->
         <div class="col-lg-4 text-center">
-          <img src="{{ url('image/Logo/logo.png') }}" alt="Logo IoT Productions" class="img-fluid img-circle mx-auto d-block">
+          <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo IoT Productions" class="img-fluid img-circle mx-auto d-block">
         </div>
       </div>
     </div>
@@ -361,7 +397,7 @@ html {
                 <div id="faqCollapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
                     <div class="accordion-body">
                       Kami memiliki beberapa produk yaitu:
-                      {{-- list produk: --}}
+                      
                       <ul>
                         <li>Alat Peraga (Smart Home, Smart Farm, Presence RFID)</li>
                         <li>Starter Kit (Smart Home, Smart Farm, Presence RFID)</li>
@@ -480,12 +516,30 @@ html {
 
     <!-- Bagian Gambar -->
     <div class="container-fluid p-0">
-      <img src="{{ ('image/tim.png') }}" alt="Team Image" class="img-fluid w-100">
+      <img src="<?php echo e(('image/tim.png')); ?>" alt="Team Image" class="img-fluid w-100">
   </div>
 
-<x-footer></x-footer>
+<?php if (isset($component)) { $__componentOriginal8a8716efb3c62a45938aca52e78e0322 = $component; } ?>
+<?php if (isset($attributes)) { $__attributesOriginal8a8716efb3c62a45938aca52e78e0322 = $attributes; } ?>
+<?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.footer','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
+<?php $component->withName('footer'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php if (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag && $constructor = (new ReflectionClass(Illuminate\View\AnonymousComponent::class))->getConstructor()): ?>
+<?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
+<?php endif; ?>
+<?php $component->withAttributes([]); ?> <?php echo $__env->renderComponent(); ?>
+<?php endif; ?>
+<?php if (isset($__attributesOriginal8a8716efb3c62a45938aca52e78e0322)): ?>
+<?php $attributes = $__attributesOriginal8a8716efb3c62a45938aca52e78e0322; ?>
+<?php unset($__attributesOriginal8a8716efb3c62a45938aca52e78e0322); ?>
+<?php endif; ?>
+<?php if (isset($__componentOriginal8a8716efb3c62a45938aca52e78e0322)): ?>
+<?php $component = $__componentOriginal8a8716efb3c62a45938aca52e78e0322; ?>
+<?php unset($__componentOriginal8a8716efb3c62a45938aca52e78e0322); ?>
+<?php endif; ?>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js">
 </script>
 </body>
-</html>
+</html><?php /**PATH C:\laragon\www\IoT-Production-main\resources\views/welcome.blade.php ENDPATH**/ ?>
