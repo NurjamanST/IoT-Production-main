@@ -241,15 +241,15 @@ html {
               </div>
             </div>
           </div>
-
-      </div>
-        <div class="container-fluid">
+        </div>
+      
+      <div class="container-fluid">
           <!-- CARD 1 -->
           <div class="d-flex align-items-center mb-4" style="width: 100%; gap: 12px; height: 180px;">
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/example.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="/image/Produk/Smart Farm Starterkit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -259,7 +259,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/example.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="/image/Produk/Smart Farm Training kit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -276,19 +276,19 @@ html {
               </div>
               <div class="d-flex justify-content-between gap-2">
                 <a href="#" class="btn btn-primary btn-sm rounded">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                <a href="#" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
+                <a href="/farm" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
-
       </div>
-        <div class="container-fluid">
+      
+      <div class="container-fluid">
           <!-- CARD 1 -->
           <div class="d-flex align-items-center mb-4" style="width: 100%; gap: 12px; height: 180px;">
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/example.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="/image/Produk/RFID Starterkit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -298,7 +298,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/example.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="/image/Produk/RFID Training Kit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -319,7 +319,6 @@ html {
               </div>
             </div>
           </div>
-
       </div>
   </section>
 

@@ -29,7 +29,7 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-        <img src="/image/h-house.jpeg" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
+        <img src="/image/Label/SmartHome-Label.png" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginalb9eddf53444261b5c229e9d8b9f1298e)): ?>
@@ -55,7 +55,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                 <div class="border p-3 rounded shadow">
                     <h5>Lampu 1</h5>
-                    <img src="image/lampu.jpeg" alt="Lampu" class="img-fluid">
+                    <img src="image/Icons/lampu.png" alt="Lampu" class="img-fluid">
                     <div class="mt-2">
                         <button class="btn btn-success w-100" onclick="toggleDevice(this, 'ON', 'OFF')">ON</button>
                     </div>
@@ -66,7 +66,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                 <div class="border p-3 rounded shadow">
                     <h5>Lampu 2</h5>
-                    <img src="image/lampu.jpeg" alt="Lampu" class="img-fluid">
+                    <img src="image/Icons/lampu.png" alt="Lampu" class="img-fluid">
                     <div class="mt-2">
                         <button class="btn btn-success w-100" onclick="toggleDevice(this, 'ON', 'OFF')">ON</button>
                     </div>
@@ -77,7 +77,7 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                 <div class="border p-3 rounded shadow">
                     <h5>Kipas</h5>
-                    <img src="image/kipas.jpeg" alt="Kipas" class="img-fluid">
+                    <img src="image/Icons/kipas.png" alt="Kipas" class="img-fluid">
                     <div class="mt-2">
                         <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI')">NYALA</button>
                     </div>
@@ -88,9 +88,9 @@
             <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                 <div class="border p-3 rounded shadow">
                     <h5>Pagar Rumah</h5>
-                    <img src="image/pagar.jpeg" alt="Pagar" class="img-fluid">
+                    <img src="image/Icons/pager.png" alt="Pagar" class="img-fluid">
                     <div class="mt-2">
-                        <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI')">NYALA</button>
+                        <button class="btn btn-success w-100" onclick="toggleDevice(this, 'BUKA', 'TUTUP')">BUKA</button>
                     </div>
                 </div>
             </div>
@@ -98,8 +98,8 @@
             <!-- Pagar Rumah 2 -->
             <div class="col-12 col-sm-6 col-md-4 col-lg-2">
                 <div class="border p-3 rounded shadow">
-                    <h5>Pagar Rumah</h5>
-                    <img src="image/kabel.jpeg" alt="Pagar" class="img-fluid">
+                    <h5>Kabel</h5>
+                    <img src="image/Icons/kabel.png" alt="Pagar" class="img-fluid">
                     <div class="mt-2">
                         <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI')">NYALA</button>
                     </div>
