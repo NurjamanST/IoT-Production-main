@@ -128,19 +128,19 @@ html {
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-            <img src="image/1.png" class="d-block w-100" alt="...">
+            <img src="image/banner/1.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="image/2.png" class="d-block w-100" alt="...">
+            <img src="image/banner/2.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="image/3.png" class="d-block w-100" alt="...">
+            <img src="image/banner/3.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="image/4.png" class="d-block w-100" alt="...">
+            <img src="image/banner/4.png" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="image/5.png" class="d-block w-100" alt="...">
+            <img src="image/banner/5.png" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -174,7 +174,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/example.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="/image/Produk/Smart Home Starter Kit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -184,7 +184,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="/image/example.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="/image/Produk/Smart Home Training Kit.jpg" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -196,7 +196,7 @@ html {
               <div>
                 <h6 class="fw-bold mb-2">Smart Home (Alat Peraga & Stater Kit)</h6>
                 <p class="text-muted" style="font-size: 13px;">
-                  Produk ini merupakan alat peraga edukasi untuk konsep Smart Home berbasis IoT, dilengkapi sensor dan aktuator. Cocok untuk pembelajaran dan praktikum.
+                  Smart Home System adalah solusi lengkap untuk mengontrol dan memonitor rumah Anda secara otomatis dan real-time melalui smartphone. Dengan perangkat ini, Anda dapat mengatur pencahayaan, suhu ruangan, keamanan, dan perangkat elektronik lainnya dari mana saja. Dilengkapi dengan sensor pintar, kamera CCTV, dan integrasi suara (voice control), sistem ini memberikan kenyamanan, keamanan, dan efisiensi energi bagi rumah modern. Cocok untuk keluarga yang menginginkan gaya hidup cerdas dan terhubung.
                 </p>
               </div>
               <div class="d-flex justify-content-between gap-2">
@@ -235,7 +235,7 @@ html {
               <div>
                 <h6 class="fw-bold mb-2">Smart Farm (Alat Peraga & Stater Kit)</h6>
                 <p class="text-muted" style="font-size: 13px;">
-                  Produk ini merupakan alat peraga edukasi untuk konsep Smart Home berbasis IoT, dilengkapi sensor dan aktuator. Cocok untuk pembelajaran dan praktikum.
+                  Smart Farm Monitoring System adalah alat IoT yang dirancang untuk memaksimalkan produktivitas pertanian dengan memantau kondisi lahan secara real-time. Sistem ini dilengkapi dengan sensor untuk mengukur kelembaban tanah, suhu, kelembaban udara, dan intensitas cahaya. Data yang dikumpulkan dapat diakses melalui aplikasi mobile, memungkinkan petani untuk mengambil keputusan tepat waktu seperti mengatur irigasi otomatis atau memberikan pupuk. Dengan teknologi ini, pertanian menjadi lebih efisien, hemat sumber daya, dan berkelanjutan.
                 </p>
               </div>
               <div class="d-flex justify-content-between gap-2">
@@ -274,7 +274,7 @@ html {
               <div>
                 <h6 class="fw-bold mb-2">Preference REFID (Alat Peraga & Stater Kit)</h6>
                 <p class="text-muted" style="font-size: 13px;">
-                  Produk ini merupakan alat peraga edukasi untuk konsep Smart Home berbasis IoT, dilengkapi sensor dan aktuator. Cocok untuk pembelajaran dan praktikum.
+                  Presence RFID System adalah solusi cerdas untuk manajemen kehadiran dan akses kontrol berbasis teknologi RFID. Sistem ini memungkinkan pelacakan kehadiran karyawan, siswa, atau tamu secara akurat dan otomatis. Dengan kartu atau tag RFID, pengguna dapat mengakses area tertentu yang telah ditentukan, sementara data kehadiran tersimpan secara real-time di cloud untuk analisis lebih lanjut. Ideal untuk kantor, sekolah, atau gedung perkantoran yang membutuhkan sistem kehadiran yang efisien dan terintegrasi.
                 </p>
               </div>
               <div class="d-flex justify-content-between gap-2">
