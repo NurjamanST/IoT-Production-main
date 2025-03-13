@@ -25,6 +25,12 @@ Route::get('/farm', function () {
 Route::get('/invalid', function () {
     return view('invalid');
 });
+Route::get('/sdm', function () {
+    return view('sdm');
+});
+Route::get('/presence', function () {
+    return view('presence');
+});
 
 Route::get('/form', function () {
     return view('form');
