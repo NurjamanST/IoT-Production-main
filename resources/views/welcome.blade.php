@@ -174,7 +174,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ asset('image/Produk/home2.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="{{ url('image/Produk/home2.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -184,7 +184,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ asset('image/Produk/home3.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="{{ url('image/Produk/home3.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -213,7 +213,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ asset('image/Produk/farm.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="{{ url('image/Produk/farm.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -223,7 +223,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ asset('image/Produk/farm2.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="{{ url('image/Produk/farm2.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -252,7 +252,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ asset('image/Produk/presence.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="{{ url('image/Produk/presence.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -262,7 +262,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="{{ asset('image/Produk/presence2.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="{{ url('image/Produk/presence2.png') }}" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -291,7 +291,7 @@ html {
       <span>MITRA KAMI</span>
         <div class="container-fluid py-4 my-5">
             <div class="d-flex justify-content-center flex-wrap gap-4">
-                <img src="{{ asset('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
                 <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
                 <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
                 <img src="{{ url('image/Logo/logo.png') }}" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
@@ -480,7 +480,7 @@ html {
 
     <!-- Bagian Gambar -->
     <div class="container-fluid p-0">
-      <img src="{{ ('image/tim.png') }}" alt="Team Image" class="img-fluid w-100">
+      <img src="{{ ('image/grup.png') }}" alt="Team Image" class="img-fluid w-100">
   </div>
 
 <x-footer></x-footer>
