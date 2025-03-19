@@ -6,19 +6,17 @@
     <title>Smart Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="<?php echo e(asset('assets/css/style.css')); ?>">
+    <meta name="csrf-token" content="<?php echo e(csrf_token()); ?>">
     <style>
         html {
-            scroll-padding-top: 58px; /* Sesuaikan 100px dengan tinggi navbar */
+            scroll-padding-top: 58px;
         }
         html, body {
             overflow-x: hidden;
         }
-
     </style>
 </head>
-
 <body>
-    
     <?php if (isset($component)) { $__componentOriginalb9eddf53444261b5c229e9d8b9f1298e = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginalb9eddf53444261b5c229e9d8b9f1298e = $attributes; } ?>
 <?php $component = App\View\Components\Navbar::resolve([] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
@@ -48,76 +46,72 @@
         </div>
     </div>
 
-
-
-        <div class="row mt-4 text-center justify-content-center">
-            <!-- Lampu 1 -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                <div class="border p-3 rounded shadow">
-                    <h5>Lampu 1</h5>
-                    <img src="image/Icons/lampu.png" alt="Lampu" class="img-fluid">
-                    <div class="mt-2">
-                        <button class="btn btn-success w-100" onclick="toggleDevice(this, 'ON', 'OFF')">ON</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Lampu 2 -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                <div class="border p-3 rounded shadow">
-                    <h5>Lampu 2</h5>
-                    <img src="image/Icons/lampu.png" alt="Lampu" class="img-fluid">
-                    <div class="mt-2">
-                        <button class="btn btn-success w-100" onclick="toggleDevice(this, 'ON', 'OFF')">ON</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Kipas -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                <div class="border p-3 rounded shadow">
-                    <h5>Kipas</h5>
-                    <img src="image/Icons/kipas.png" alt="Kipas" class="img-fluid">
-                    <div class="mt-2">
-                        <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI')">NYALA</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pagar Rumah 1 -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                <div class="border p-3 rounded shadow">
-                    <h5>Pagar Rumah</h5>
-                    <img src="image/Icons/pager.png" alt="Pagar" class="img-fluid">
-                    <div class="mt-2">
-                        <button class="btn btn-success w-100" onclick="toggleDevice(this, 'BUKA', 'TUTUP')">BUKA</button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Pagar Rumah 2 -->
-            <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-                <div class="border p-3 rounded shadow">
-                    <h5>Kabel</h5>
-                    <img src="image/Icons/kabel.png" alt="Pagar" class="img-fluid">
-                    <div class="mt-2">
-                        <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI')">NYALA</button>
-                    </div>
+    <div class="row mt-4 text-center justify-content-center">
+        <!-- Lampu 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="border p-3 rounded shadow">
+                <h5>Lampu 1</h5>
+                <img src="image/Icons/lampu.png" alt="Lampu" class="img-fluid">
+                <div class="mt-2">
+                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'ON', 'OFF', 1)">ON</button>
                 </div>
             </div>
         </div>
 
-        <!-- Sensor Ultrasonik -->
-        <div class="mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center bg-primary text-white p-3 full-width">
-            <span class="fw-bold">SENSOR ULTRASONIK</span>
-            <div class="bg-white text-dark px-3 py-2 rounded text-center">
-                Sensor Ultrasonik digunakan untuk mengontrol Kipas Angin sesuai Jarak.
+        <!-- Lampu 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="border p-3 rounded shadow">
+                <h5>Lampu 2</h5>
+                <img src="image/Icons/lampu.png" alt="Lampu" class="img-fluid">
+                <div class="mt-2">
+                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'ON', 'OFF', 2)">ON</button>
+                </div>
             </div>
-            <span class="fw-bold">Status Jarak: <span class="text-warning">50 cm</span></span>
         </div>
 
+        <!-- Kipas -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="border p-3 rounded shadow">
+                <h5>Kipas</h5>
+                <img src="image/Icons/kipas.png" alt="Kipas" class="img-fluid">
+                <div class="mt-2">
+                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI', 3)">NYALA</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagar Rumah 1 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="border p-3 rounded shadow">
+                <h5>Pagar Rumah</h5>
+                <img src="image/Icons/pager.png" alt="Pagar" class="img-fluid">
+                <div class="mt-2">
+                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'BUKA', 'TUTUP', 4)">BUKA</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Pagar Rumah 2 -->
+        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
+            <div class="border p-3 rounded shadow">
+                <h5>Kabel</h5>
+                <img src="image/Icons/kabel.png" alt="Pagar" class="img-fluid">
+                <div class="mt-2">
+                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI', 5)">NYALA</button>
+                </div>
+            </div>
+        </div>
     </div>
-    
+
+    <!-- Sensor Ultrasonik -->
+    <div class="mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center bg-primary text-white p-3 full-width">
+        <span class="fw-bold">SENSOR ULTRASONIK</span>
+        <div class="bg-white text-dark px-3 py-2 rounded text-center">
+            Sensor Ultrasonik digunakan untuk mengontrol Kipas Angin sesuai Jarak.
+        </div>
+        <span class="fw-bold">Status Jarak: <span class="text-warning">50 cm</span></span>
+    </div>
+
     <?php if (isset($component)) { $__componentOriginal8a8716efb3c62a45938aca52e78e0322 = $component; } ?>
 <?php if (isset($attributes)) { $__attributesOriginal8a8716efb3c62a45938aca52e78e0322 = $attributes; } ?>
 <?php $component = Illuminate\View\AnonymousComponent::resolve(['view' => 'components.footer','data' => []] + (isset($attributes) && $attributes instanceof Illuminate\View\ComponentAttributeBag ? (array) $attributes->getIterator() : [])); ?>
@@ -138,19 +132,79 @@
 <?php unset($__componentOriginal8a8716efb3c62a45938aca52e78e0322); ?>
 <?php endif; ?>
     <script>
-                
-        function toggleDevice(button, textOn, textOff) {
-            if (button.classList.contains("btn-success")) {
-                button.classList.remove("btn-success");
-                button.classList.add("btn-danger");
-                button.innerText = textOff;
-            } else {
-                button.classList.remove("btn-danger");
-                button.classList.add("btn-success");
-                button.innerText = textOn;
+        // Fungsi untuk mengambil data dari API
+        async function fetchDevices() {
+            try {
+                const response = await fetch('/api/smarthome');
+                if (!response.ok) {
+                    throw new Error('Failed to fetch data');
+                }
+                const result = await response.json();
+                renderDevices(result.data);
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to load devices');
             }
         }
+
+        // Fungsi untuk menampilkan data di DOM
+        function renderDevices(devices) {
+            const deviceList = document.querySelectorAll('.col-12.col-sm-6.col-md-4.col-lg-2');
+            deviceList.forEach((deviceDiv, index) => {
+                const device = devices[index];
+                if (device) {
+                    const button = deviceDiv.querySelector('button');
+                    if (device.status === 'active') {
+                        button.classList.remove('btn-danger');
+                        button.classList.add('btn-success');
+                        button.innerText = 'ON'; // Sesuaikan dengan teks default
+                    } else {
+                        button.classList.remove('btn-success');
+                        button.classList.add('btn-danger');
+                        button.innerText = 'OFF'; // Sesuaikan dengan teks default
+                    }
+                }
+            });
+        }
+
+        // Fungsi untuk mengubah status perangkat
+        async function toggleDevice(button, textOn, textOff, deviceId) {
+            try {
+                const newStatus = button.classList.contains("btn-success") ? "not active" : "active";
+                const response = await fetch(`/api/smarthome/update/${deviceId}`, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-CSRF-TOKEN': '<?php echo e(csrf_token()); ?>' // Tambahkan CSRF token untuk keamanan
+                    },
+                    body: JSON.stringify({ status: newStatus })
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to update status');
+                }
+
+                const result = await response.json();
+                alert(result.message); // Tampilkan pesan sukses
+
+                // Update tampilan tombol
+                if (newStatus === 'active') {
+                    button.classList.remove("btn-danger");
+                    button.classList.add("btn-success");
+                    button.innerText = textOn;
+                } else {
+                    button.classList.remove("btn-success");
+                    button.classList.add("btn-danger");
+                    button.innerText = textOff;
+                }
+            } catch (error) {
+                console.error('Error:', error);
+                alert('Failed to update status');
+            }
+        }
+
+        // Panggil fungsi fetchDevices saat halaman dimuat
+        document.addEventListener('DOMContentLoaded', fetchDevices);
     </script>
 </body>
-</html>
-<?php /**PATH C:\laragon\www\IoT-Production-main\resources\views/house.blade.php ENDPATH**/ ?>
+</html><?php /**PATH C:\laragon\www\IoT-Production-main\resources\views/house.blade.php ENDPATH**/ ?>
