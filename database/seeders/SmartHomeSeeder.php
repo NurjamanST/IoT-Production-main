@@ -14,10 +14,25 @@ class SmartHomeSeeder extends Seeder
     public function run(): void
     {
         SmartHome::create([
-            'tools_name' => 'Lampu1',
+            'tools_name' => 'Lampu 1',
             'status' => 'active'
         ]);
-
+        SmartHome::create([
+            'tools_name' => 'Lampu 2',
+            'status' => 'active'
+        ]);
+        SmartHome::create([
+            'tools_name' => 'Kipas',
+            'status' => 'active'
+        ]);
+        SmartHome::create([
+            'tools_name' => 'Pagar Rumah',
+            'status' => 'active'
+        ]);
+        SmartHome::create([
+            'tools_name' => 'Kabel Listrik',
+            'status' => 'active'
+        ]);
         SmartHome::create([
             'tools_name' => 'Ultra Sonic',
             'data' => '50'
