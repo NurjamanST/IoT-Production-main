@@ -245,7 +245,6 @@ html {
             </div>
           </div>
       </div>
-      
       <div class="container-fluid">
           <!-- CARD 1 -->
           <div class="d-flex align-items-center mb-4" style="width: 100%; gap: 12px; height: 180px;">
