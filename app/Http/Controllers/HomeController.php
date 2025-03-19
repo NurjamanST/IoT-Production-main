@@ -36,44 +36,4 @@ class HomeController extends Controller
             'message' => $relayField . ' Behasil Update'
         ]);
     }
-
-    // public function update(Request $request, $identitas)
-    // {
-    //     $data = HomeRelay::find(1);
-
-    //     if ($identitas == 1) {
-    //         $relay1 = $data->relay1;
-    //         if ($relay1 == 1) {
-    //             $data->update([
-    //                 'relay1' => 0
-    //             ]);
-    //         } elseif ($relay1 == 0) {
-    //             $data->update([
-    //                 'relay1' => 1
-    //             ]);
-    //         }
-    //     } elseif ($identitas == 2) {
-    //         $relay2 = $data->relay2;
-    //         if ($relay2 == 1) {
-    //             $data->update([
-    //                 'relay2' => 0
-    //             ]);
-    //         } elseif ($relay2 == 0) {
-    //             $data->update([
-    //                 'relay2' => 1
-    //             ]);
-    //         }
-    //     } elseif ($identitas == 3) {
-    //         $relay3 = $data->relay3;
-    //         if ($relay3 == 1) {
-    //             $data->update([
-    //                 'relay3' => 0
-    //             ]);
-    //         } elseif ($relay3 == 0) {
-    //             $data->update([
-    //                 'relay3' => 1
-    //             ]);
-    //         }
-    //     }
-    // }
 }
