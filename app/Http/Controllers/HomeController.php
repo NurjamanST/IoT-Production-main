@@ -8,7 +8,8 @@ use Illuminate\Http\Request;
 
 class HomeController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $data = SmartHome::all();
 
         return response([
@@ -16,14 +17,15 @@ class HomeController extends Controller
             'data' => $data
         ]);
     }
-    public function update(Request $request, $id){
+    public function update(Request $request, $id)
+    {
         $data = SmartHome::find($id);
 
-        if($data->status == 'active'){
+        if ($data->status == 'active') {
             $data->update([
                 'status' => 'not active'
             ]);
-        }elseif($data->status == 'not active'){
+        } elseif ($data->status == 'not active') {
             $data->update([
                 'status' => 'active'
             ]);

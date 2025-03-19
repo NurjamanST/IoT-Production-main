@@ -1,8 +1,10 @@
 <?php
 
+use App\Http\Controllers\FarmController;
 use App\Http\Controllers\HomeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\InvalideController;
 
 /*
 |--------------------------------------------------------------------------
@@ -19,8 +21,23 @@ use Illuminate\Support\Facades\Route;
 //     return $request->user();
 // });
 
+
+// Smart Home
 Route::controller(HomeController::class)->group(function(){
     Route::get('/smarthome', 'index');
     Route::post('/smarthome/update/{id}', 'update');
+});
+
+// Smart Farm
+Route::controller(FarmController::class)->group(function(){
+    Route::get('/smartfarm', 'index');
+});
+
+// RFID
+Route::controller(InvalideController::class)->group(function(){
+    Route::get('/rfid/invalide', 'index');
+    Route::get('/rfid/invalide/create/{id}', 'create');
+    Route::post('/rfid/invalide/store', 'store');
+    Route::post('/rfid/invalide/delete/{id}', 'delete');
 });
 
