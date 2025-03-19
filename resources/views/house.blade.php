@@ -18,12 +18,12 @@
 </head>
 <body>
     <x-navbar>
-        <img src="/image/Label/SmartHome-Label.png" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
+        <img src="{{ ('image/Label/smarthomelabel.png') }}" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
     </x-navbar>
 
     <div class="container-fluid mt-4 pt-5 px-0"> 
         <div class="position-relative bg-dark text-white p-3 text-center">
-            <a href="/" class="btn btn-light position-absolute start-0" style="top: 13px; margin-left: 10px;">Kembali</a>
+            <a href="{{ ('/') }}" class="btn btn-light position-absolute start-0" style="top: 13px; margin-left: 10px;">Kembali</a>
             <h4 class="m-0">SMART HOME - DEMO PRODUK</h4>
         </div>
     </div>

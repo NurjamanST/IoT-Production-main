@@ -54,7 +54,7 @@
 /* Panah ke kanan (default) */
 .accordion-button::after {
     content: "";
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M6.854 4.646a.5.5 0 0 1 0 .708L9.207 8l-2.353 2.646a.5.5 0 0 1-.708-.708l2-2.25-2-2.25a.5.5 0 0 1 .708-.708z'/%3E%3C/svg%3E");
+    background-image:("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='currentColor' class='bi bi-chevron-right' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M6.854 4.646a.5.5 0 0 1 0 .708L9.207 8l-2.353 2.646a.5.5 0 0 1-.708-.708l2-2.25-2-2.25a.5.5 0 0 1 .708-.708z'/%3E%3C/svg%3E");
     background-repeat: no-repeat;
     background-size: 1rem;
     width: 1rem;
@@ -167,16 +167,16 @@ html {
             <img src="<?php echo e(('image/Banner/1.png')); ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="<?php echo e(url('image/Banner/2.png')); ?>" class="d-block w-100" alt="...">
+            <img src="<?php echo e(('image/Banner/2.png')); ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="<?php echo e(url('image/Banner/3.png')); ?>" class="d-block w-100" alt="...">
+            <img src="<?php echo e(('image/Banner/3.png')); ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="<?php echo e(url('image/Banner/4.png')); ?>" class="d-block w-100" alt="...">
+            <img src="<?php echo e(('image/Banner/4.png')); ?>" class="d-block w-100" alt="...">
             </div>
             <div class="carousel-item">
-            <img src="<?php echo e(url('image/Banner/5.png')); ?>" class="d-block w-100" alt="...">
+            <img src="<?php echo e(('image/Banner/5.png')); ?>" class="d-block w-100" alt="...">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
@@ -210,7 +210,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="<?php echo e(url('image/Produk/home2.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="<?php echo e(('image/Produk/home2.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -220,7 +220,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="<?php echo e(url('image/Produk/home3.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="<?php echo e(('image/Produk/home3.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -249,7 +249,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="<?php echo e(url('image/Produk/farm.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="<?php echo e(('image/Produk/farm.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -259,7 +259,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="<?php echo e(url('image/Produk/farm2.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="<?php echo e(('image/Produk/farm2.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -276,19 +276,18 @@ html {
               </div>
               <div class="d-flex justify-content-between gap-2">
                 <a href="#" class="btn btn-primary btn-sm rounded">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                <a href="/farm" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
+                <a href="<?php echo e(('farm')); ?>" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
       </div>
-      
       <div class="container-fluid">
           <!-- CARD 1 -->
           <div class="d-flex align-items-center mb-4" style="width: 100%; gap: 12px; height: 180px;">
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="<?php echo e(url('image/Produk/test.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="<?php echo e(('image/Produk/test.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -298,7 +297,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="<?php echo e(url('image/Produk/presence2.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="<?php echo e(('image/Produk/presence2.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -315,7 +314,7 @@ html {
               </div>
               <div class="d-flex justify-content-between gap-2">
                 <a href="#" class="btn btn-primary btn-sm rounded">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                <a href="/produkRFID" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
+                <a href="<?php echo e(('produkRFID')); ?>" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -327,18 +326,18 @@ html {
       <span>MITRA KAMI</span>
         <div class="container-fluid py-4 my-5">
             <div class="d-flex justify-content-center flex-wrap gap-4">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
-                <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
+                <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo Mitra" class="logo-mitra" style="width: 90px; height: 90px;">
             </div>
         </div>
     </div>
@@ -359,7 +358,7 @@ html {
         </div>
         <!-- Bagian Gambar -->
         <div class="col-lg-4 text-center">
-          <img src="<?php echo e(url('image/Logo/logo.png')); ?>" alt="Logo IoT Productions" class="img-fluid img-circle mx-auto d-block">
+          <img src="<?php echo e(('image/Logo/logo.png')); ?>" alt="Logo IoT Productions" class="img-fluid img-circle mx-auto d-block">
         </div>
       </div>
     </div>

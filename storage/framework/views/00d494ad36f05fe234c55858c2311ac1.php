@@ -27,7 +27,7 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-        <img src="/image/Label/SmartHome-Label.png" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
+        <img src="<?php echo e(('image/Label/smarthomelabel.png')); ?>" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginalb9eddf53444261b5c229e9d8b9f1298e)): ?>
@@ -41,7 +41,7 @@
 
     <div class="container-fluid mt-4 pt-5 px-0"> 
         <div class="position-relative bg-dark text-white p-3 text-center">
-            <a href="/" class="btn btn-light position-absolute start-0" style="top: 13px; margin-left: 10px;">Kembali</a>
+            <a href="<?php echo e(('/')); ?>" class="btn btn-light position-absolute start-0" style="top: 13px; margin-left: 10px;">Kembali</a>
             <h4 class="m-0">SMART HOME - DEMO PRODUK</h4>
         </div>
     </div>

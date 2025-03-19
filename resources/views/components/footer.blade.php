@@ -7,7 +7,7 @@
       <!-- Kiri: Logo & Sosial Media -->
       <div class="col-md-4 text-center mb-4">
         <!-- Logo -->
-        <img src="image/logo/logo.png" alt="Logo" class="img-fluid rounded-circle mb-3" style="width: 120px;">
+        <img src="{{ ('image/logo/logo.png') }}" alt="Logo" class="img-fluid rounded-circle mb-3" style="width: 120px;">
 
         <!-- Judul -->
         <h5 class="mb-4" style="font-weight: bold;">IoT-Productions Aktara Academy</h5>

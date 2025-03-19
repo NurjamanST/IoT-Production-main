@@ -240,7 +240,7 @@ html {
               </div>
               <div class="d-flex justify-content-between gap-2">
                 <a href="#" class="btn btn-primary btn-sm rounded">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                <a href="/farm" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
+                <a href="{{ ('farm') }}" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
@@ -278,7 +278,7 @@ html {
               </div>
               <div class="d-flex justify-content-between gap-2">
                 <a href="#" class="btn btn-primary btn-sm rounded">Selengkapnya <i class="bi bi-arrow-right"></i></a>
-                <a href="/produkRFID" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
+                <a href="{{ ('produkRFID') }}" class="btn btn-sm rounded" style="background-color: #0d2b57; color: white;">Demo Web <i class="bi bi-arrow-right"></i></a>
               </div>
             </div>
           </div>
