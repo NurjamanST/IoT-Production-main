@@ -11,11 +11,12 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('smart_homes', function (Blueprint $table) {
+        Schema::create('home_relays', function (Blueprint $table) {
             $table->id();
-            $table->string('tools_name');
-            $table->enum('status', ['active', 'not active'])->nullable();
-            $table->string('data')->nullable();
+            $table->boolean('relay1');
+            $table->boolean('relay2');
+            $table->boolean('relay3');
+            $table->boolean('relay4');
             $table->timestamps();
         });
     }
@@ -25,6 +26,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('smart_homes');
+        Schema::dropIfExists('home_relays');
     }
 };

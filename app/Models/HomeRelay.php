@@ -5,9 +5,8 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SmartHome extends Model
+class HomeRelay extends Model
 {
     use HasFactory;
-
     protected $guarded = [];
 }
