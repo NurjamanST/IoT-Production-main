@@ -23,7 +23,7 @@ use App\Http\Controllers\InvalideController;
 
 
 // Smart Home
-Route::controller(HomeController::class)->group(function(){
+Route::controller(HomeController::class)->group(function(){ 
     Route::get('/smarthome', 'index');
     Route::post('/smarthome/update/{id}', 'update');
 });
