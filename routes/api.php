@@ -5,6 +5,8 @@ use App\Http\Controllers\HomeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\InvalideController;
+use App\Http\Controllers\PresensiController;
+use App\Http\Controllers\SdmController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,19 +23,19 @@ use App\Http\Controllers\InvalideController;
 //     return $request->user();
 // });
 
-
-// Smart Home
+// ---{Smart Home}---
 Route::controller(HomeController::class)->group(function(){
     Route::get('/smarthome', 'index');
     Route::post('/smarthome/update/{id}', 'update');
 });
 
-// Smart Farm
+// ---{Smart Farm}---
 Route::controller(FarmController::class)->group(function(){
     Route::get('/smartfarm', 'index');
 });
 
-// RFID
+// ---{RFID}---
+// Invalide
 Route::controller(InvalideController::class)->group(function(){
     Route::get('/rfid/invalide', 'index');
     Route::get('/rfid/invalide/create/{id}', 'create');
@@ -41,3 +43,15 @@ Route::controller(InvalideController::class)->group(function(){
     Route::post('/rfid/invalide/delete/{id}', 'delete');
 });
 
+// SDM
+Route::controller(SdmController::class)->group(function(){
+    Route::get('/rfid/sdm', 'index');
+    Route::get('/rfid/sdm/edit/{id}', 'edit');
+    Route::post('rfid/sdm/update/{id}', 'update');
+});
+
+// Presensi
+Route::controller(PresensiController::class)-> group(function(){
+    Route::get('/rfid/presensi/', 'index');
+    Route::post('/rfid/absen/{uid}', 'capture');
+});
