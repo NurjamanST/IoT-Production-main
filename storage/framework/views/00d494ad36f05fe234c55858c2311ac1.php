@@ -108,7 +108,7 @@
     <!-- JavaScript -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const apiUrl = "/api/smarthome";
+            const apiUrl = "<?php echo e(('https://meniti.id/IoT-Production-main/public/api/smarthome')); ?>";
             console.log(apiUrl);
             
 
