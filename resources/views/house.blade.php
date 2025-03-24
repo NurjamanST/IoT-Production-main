@@ -72,7 +72,7 @@
     <!-- JavaScript -->
     <script>
         document.addEventListener("DOMContentLoaded", function() {
-            const apiUrl = "/api/smarthome";
+            const apiUrl = "{{ ('/api/smarthome') }}";
             console.log(apiUrl);
             
 
