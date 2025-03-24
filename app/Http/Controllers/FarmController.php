@@ -9,7 +9,8 @@ use Illuminate\Http\Request;
 
 class FarmController extends Controller
 {
-    public function index(){
+    public function index()
+    {
         $data = FarmSensor::all();
         $dataS = FarmRelay::all();
 
@@ -17,6 +18,21 @@ class FarmController extends Controller
             'status' => 'success',
             'data' => $data,
             'datas' => $dataS
+        ]);
+    }
+
+    public function update($id)
+    {
+        $data = FarmRelay::findOrFail($id);
+
+        $data->update([
+            'status_pompa' => !$data->status_pompa
+        ]);
+
+        return response([
+            'status' => 'success',
+            'message' => 'Data berhasil diupdate',
+            'data' => $data
         ]);
     }
 }

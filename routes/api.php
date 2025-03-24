@@ -33,6 +33,7 @@ Route::controller(HomeController::class)->group(function(){
 // ---{Smart Farm}---
 Route::controller(FarmController::class)->group(function(){
     Route::get('/smartfarm', 'index');
+    Route::post('/smartfarm/update/{id}', 'update');
 });
 
 // ---{RFID}---
