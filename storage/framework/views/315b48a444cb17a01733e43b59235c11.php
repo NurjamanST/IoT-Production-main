@@ -210,7 +210,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="<?php echo e(('image/Produk/home2.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="<?php echo e(('image/Produk/home.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>
@@ -220,7 +220,7 @@ html {
             <!-- Video (20%) -->
             <div style="flex: 0 0 30%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="<?php echo e(('image/Produk/home3.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
+                <img src="<?php echo e(('image/Produk/home2.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Video">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Video)
                 </div>
@@ -287,7 +287,7 @@ html {
             <!-- Picture (10%) -->
             <div style="flex: 0 0 17%; height: 100%;">
               <div class="position-relative w-100 h-100">
-                <img src="<?php echo e(('image/Produk/test.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
+                <img src="<?php echo e(('image/Produk/presence.png')); ?>" class="img-fluid rounded border w-100 h-100 object-fit-cover" alt="Thumbnail Foto">
                 <div class="position-absolute top-50 start-50 translate-middle text-center fw-bold text-black" style="width: 100%; font-size: 10px;">
                   Thumbnail Products <br> (Picture)
                 </div>

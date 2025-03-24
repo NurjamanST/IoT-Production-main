@@ -1,4 +1,4 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-lg fixed-top">
     <div class="container-fluid" style="margin-left: 30px; margin-right: 10px;">
         <a class="navbar-brand fw-bold" href="#">
         <img src="{{('image/Logo/logo.png') }}" alt="Bootstrap" width="50" height="50">    

@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\FarmRelay;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class FarmRelaySeeder extends Seeder
 {
@@ -13,5 +14,8 @@ class FarmRelaySeeder extends Seeder
     public function run(): void
     {
         //
+        FarmRelay::create([
+            'status' => 'active',
+        ]);
     }
 }

@@ -11,7 +11,7 @@
 </head>
 <body>
 <x-navbar>
-    <img src="/image/Label/RFID-Label.png" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
+    <img src="/image/Label/rfidlabel.png" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
 </x-navbar>
 
 <div class="container-fluid mt-4 pt-5 px-0"> 

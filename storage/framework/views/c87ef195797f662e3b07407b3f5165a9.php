@@ -6,7 +6,8 @@
     <title>Smart Farm</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="https://cdn.datatables.net/2.2.2/css/dataTables.dataTables.css" rel="stylesheet">
-    <link rel="stylesheet" href="<?php echo e(asset('assets/css/style.css')); ?>">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet" href="<?php echo e(('assets/css/style.css')); ?>">
     <style>
         html {
             scroll-padding-top: 58px; /* Sesuaikan 100px dengan tinggi navbar */
@@ -30,7 +31,7 @@
 <?php $attributes = $attributes->except(collect($constructor->getParameters())->map->getName()->all()); ?>
 <?php endif; ?>
 <?php $component->withAttributes([]); ?>
-        <img src="/image/Label/SmartFarm-Label.png" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
+        <img src="<?php echo e(('image/Label/smartfarmlabel.png')); ?>" alt="SMART HOME Starter Kit" class="img-fluid position-absolute top-10 end-0" style="height: 50px; margin-right: 10px;">
      <?php echo $__env->renderComponent(); ?>
 <?php endif; ?>
 <?php if (isset($__attributesOriginalb9eddf53444261b5c229e9d8b9f1298e)): ?>
@@ -44,7 +45,7 @@
     
     <div class="container-fluid mt-4 pt-5 px-0"> 
         <div class="position-relative bg-dark text-white p-3 text-center">
-            <a href="/" class="btn btn-light position-absolute start-0" style="top: 13px; margin-left: 10px;">Kembali</a>
+            <a href="<?php echo e(('/')); ?>" class="btn btn-light position-absolute start-0" style="top: 13px; margin-left: 10px;">Kembali</a>
             <h4 class="m-0">SMART FARM - DEMO PRODUK</h4>
         </div>
     </div>
@@ -53,57 +54,32 @@
     
     <div class="row mt-4 text-center justify-content-center">
         <!-- Update at for Kelembaban -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-5">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mx-5">
             <div class="border p-3 rounded shadow">
-                <div class="">
-                    <h5>07:00 WIB Selasa 12/03/2025</h5>
-                </div>
-                <div class="">
-                    <img src="image/Icons/kalender.png" alt="calender" class="img-fluid">
-                </div>
-                <div class="mt-4">
-                    
-                </div>
-            </div>
-        </div>
-
-        <!-- Kelembaban -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-5">
-            <div class="border p-3 rounded shadow">
-                <h5>KELEMBABAN</h5>
-                <img src="image/Icons/ph.png" alt="ph" class="img-fluid">
-                <div class="mt-2">
-                    <button class="btn btn-primary w-100" >80 %</button>
+                <h5 class="alert alert-info">KELEMBABAN: 80%</h5>
+                <img src="<?php echo e(('image/Icons/ph.png')); ?>" alt="ph" class="img-fluid">
+                <div class="mt-4 mb-2">
+                    <p class="btn btn-warning"><small><i class="bi bi-calendar-week"></i>  Update Data : 2025-03-01 16:54:55</small></p>
                 </div>
             </div>
         </div>
 
         <!-- Kondisi POMPA -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2 mx-5">
+        <div class="col-12 col-sm-6 col-md-4 col-lg-3 mx-5">
             <div class="border p-3 rounded shadow">
-                <h5>KONDISI POMPA</h5>
+                <h5 class="alert alert-primary">KONDISI POMPA</h5>
                 <img src="image/Icons/pompa.png" alt="Kipas" class="img-fluid">
-                <div class="mt-2">
-                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI')">NYALA</button>
+                <div class="my-2 col-12">
+                    <p class="btn btn-success mt-3 col-auto"><i class="bi bi-lightbulb-fill"></i> NYALA</p>
+                    <a href="#" class="btn btn-primary col-auto"><i class="bi bi-bucket-fill"></i> Klik Siram Disini</a>
+                    <p class="btn btn-warning col-auto"><small><i class="bi bi-calendar-week"></i>  Update Data : 2025-03-01 16:54:55</small></p>
                 </div>
             </div>
         </div>
     </div>
 
-    
-    <div class="container text-left my-3 p-3">
-        <div class="row">
-          <div class="col-6 col-md-8 px-3 d-flex align-items-center">
-            <h5>Terakhir Menyala Pada : 07:01 WIB Selasa 12/03/2025</h5>
-          </div>
-          <div class="col-6 col-md-4 px-3">
-            <button class="btn btn-success text-white px-3 rounded">KLIK UNTUK SIRAM SEKARANG</button>
-          </div>
-        </div>
-    </div>
-
     <!-- Keterangan Sistem -->
-    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center bg-primary text-white p-3 full-width">
+    <div class="row mt-4 justify-content-between align-items-center bg-primary text-white p-3 full-width">
         <div class="col-12 col-md-auto mx-2">
             <span class="fw-bold">KETERANGAN SISTEM</span>
         </div>
@@ -120,13 +96,11 @@
     </div>
 
     
-    <div class="container">
-        <div class="row justify-content-center my-4">
-            <div class="col-12 col-md-10">
-                <h4>Riwayat Data - SMART FARM</h4>
-            </div>
-            <div class="col-12 col-md-auto">
-                <button class="btn btn-success text-white">Unduh File Excel</button>
+    <div class="row mt-4 justify-content-between align-items-center p-3 full-width mx-5">
+        <div class="justify-content-center my-">
+            <div class="row col-12 justify-content-between">
+                <h4 class="col-auto">Riwayat Data - SMART FARM</h4>
+                <button class="btn btn-success text-white col-auto">Unduh File Excel</button>
             </div>
         </div>
         <div class="row justify-content-center my-4">
@@ -141,34 +115,15 @@
                     </tr>
                 </thead>
                 <tbody>
+                    <?php for ($i=1; $i <= 100; $i++){?>
                     <tr>
-                        <td>1</td>
+                        <td><?= $i?></td>
                         <td>07:00 WIB Selasa, 12/03/2025</td>
                         <td>80 %</td>
                         <td>Mati</td>
                         <td>07:00 WIB Selasa, 12/03/2025</td>
                     </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>07:00 WIB Selasa, 12/03/2025</td>
-                        <td>91 %</td>
-                        <td>Mati</td>
-                        <td>07:00 WIB Selasa, 12/03/2025</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>07:00 WIB Selasa, 12/03/2025</td>
-                        <td>102 %</td>
-                        <td>Mati</td>
-                        <td>07:00 WIB Selasa, 12/03/2025</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>07:00 WIB Selasa, 12/03/2025</td>
-                        <td>113 %</td>
-                        <td>Mati</td>
-                        <td>07:00 WIB Selasa, 12/03/2025</td>
-                    </tr>
+                    <?php }?>
                 </tbody>
             </table>
         </div>

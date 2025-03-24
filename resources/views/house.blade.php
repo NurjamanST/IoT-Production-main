@@ -5,15 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Smart Home</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="{{ asset('assets/css/style.css') }}">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <style>
-        html {
-            scroll-padding-top: 58px;
-        }
-        html, body {
-            overflow-x: hidden;
-        }
+        html { scroll-padding-top: 58px; }
+        html, body { overflow-x: hidden; }
     </style>
 </head>
 <body>
@@ -29,146 +25,115 @@
     </div>
 
     <div class="row mt-4 text-center justify-content-center">
-        <!-- Lampu 1 -->
+        <!-- Perangkat akan ditampilkan oleh JavaScript -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-2">
             <div class="border p-3 rounded shadow">
                 <h5>Lampu 1</h5>
-                <img src="image/Icons/lampu.png" alt="Lampu" class="img-fluid">
+                <img src="{{ ('image/Icons/lampu.png') }}" alt="Lampu" class="img-fluid">
                 <div class="mt-2">
-                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'ON', 'OFF', 1)">ON</button>
+                    <button id="relay1" class="btn w-100">Loading...</button>
                 </div>
             </div>
         </div>
 
-        <!-- Lampu 2 -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-2">
             <div class="border p-3 rounded shadow">
                 <h5>Lampu 2</h5>
-                <img src="image/Icons/lampu.png" alt="Lampu" class="img-fluid">
+                <img src="{{ ('image/Icons/lampu.png') }}" alt="Lampu" class="img-fluid">
                 <div class="mt-2">
-                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'ON', 'OFF', 2)">ON</button>
+                    <button id="relay2" class="btn w-100">Loading...</button>
                 </div>
             </div>
         </div>
 
-        <!-- Kipas -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-2">
             <div class="border p-3 rounded shadow">
                 <h5>Kipas</h5>
-                <img src="image/Icons/kipas.png" alt="Kipas" class="img-fluid">
+                <img src="{{ ('image/Icons/kipas.png') }}" alt="Kipas" class="img-fluid">
                 <div class="mt-2">
-                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI', 3)">NYALA</button>
+                    <button id="relay3" class="btn w-100">Loading...</button>
                 </div>
             </div>
         </div>
 
-        <!-- Pagar Rumah 1 -->
-        <div class="col-12 col-sm-6 col-md-4 col-lg-2">
-            <div class="border p-3 rounded shadow">
-                <h5>Pagar Rumah</h5>
-                <img src="image/Icons/pager.png" alt="Pagar" class="img-fluid">
-                <div class="mt-2">
-                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'BUKA', 'TUTUP', 4)">BUKA</button>
-                </div>
-            </div>
-        </div>
-
-        <!-- Pagar Rumah 2 -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-2">
             <div class="border p-3 rounded shadow">
                 <h5>Kabel</h5>
-                <img src="image/Icons/kabel.png" alt="Pagar" class="img-fluid">
+                <img src="{{ ('image/Icons/kabel.png') }}" alt="Kabel" class="img-fluid">
                 <div class="mt-2">
-                    <button class="btn btn-success w-100" onclick="toggleDevice(this, 'NYALA', 'MATI', 5)">NYALA</button>
+                    <button id="relay4" class="btn w-100">Loading...</button>
                 </div>
             </div>
         </div>
     </div>
 
-    <!-- Sensor Ultrasonik -->
-    <div class="mt-4 d-flex flex-column flex-md-row justify-content-between align-items-center bg-primary text-white p-3 full-width">
-        <span class="fw-bold">SENSOR ULTRASONIK</span>
-        <div class="bg-white text-dark px-3 py-2 rounded text-center">
-            Sensor Ultrasonik digunakan untuk mengontrol Kipas Angin sesuai Jarak.
-        </div>
-        <span class="fw-bold">Status Jarak: <span class="text-warning">50 cm</span></span>
-    </div>
-
     <x-footer></x-footer>
-    <script>
-        // Fungsi untuk mengambil data dari API
-        async function fetchDevices() {
-            try {
-                const response = await fetch('/api/smarthome');
-                if (!response.ok) {
-                    throw new Error('Failed to fetch data');
-                }
-                const result = await response.json();
-                renderDevices(result.data);
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Failed to load devices');
-            }
-        }
 
-        // Fungsi untuk menampilkan data di DOM
-        function renderDevices(devices) {
-            const deviceList = document.querySelectorAll('.col-12.col-sm-6.col-md-4.col-lg-2');
-            deviceList.forEach((deviceDiv, index) => {
-                const device = devices[index];
-                if (device) {
-                    const button = deviceDiv.querySelector('button');
-                    if (device.status === 'active') {
-                        button.classList.remove('btn-danger');
-                        button.classList.add('btn-success');
-                        button.innerText = 'ON'; // Sesuaikan dengan teks default
-                    } else {
-                        button.classList.remove('btn-success');
-                        button.classList.add('btn-danger');
-                        button.innerText = 'OFF'; // Sesuaikan dengan teks default
+    <!-- JavaScript -->
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const apiUrl = "/api/smarthome";
+            console.log(apiUrl);
+            
+
+            /**
+             * Mengambil status relay dari API dan memperbarui UI.
+             */
+            function fetchStatus() {
+                fetch(apiUrl)
+                    .then(response => response.json())
+                    .then(responseData => {
+                        if (responseData.status === "success" && responseData.data.length > 0) {
+                            updateUI(responseData.data[0]);
+                        } else {
+                            console.error("Data API tidak valid:", responseData);
+                        }
+                    })
+                    .catch(error => console.error("Gagal mengambil data:", error));
+            }
+
+            /**
+             * Memperbarui tampilan tombol berdasarkan status relay.
+             * 
+             * @param {Object} data - Objek yang berisi status relay dari API.
+             */
+            function updateUI(data) {
+                for (let i = 1; i <= 4; i++) {
+                    const button = document.getElementById(`relay${i}`);
+                    if (button) {
+                        const status = data[`relay${i}`];
+                        button.textContent = status ? "ON" : "OFF";
+                        button.classList.toggle("btn-success", status === 1);
+                        button.classList.toggle("btn-danger", status === 0);
+                        button.onclick = () => toggleDevice(i, status);
                     }
                 }
-            });
-        }
-
-        // Fungsi untuk mengubah status perangkat
-        async function toggleDevice(button, textOn, textOff, deviceId) {
-            try {
-                const newStatus = button.classList.contains("btn-success") ? "not active" : "active";
-                const response = await fetch(`/api/smarthome/update/${deviceId}`, {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                        'X-CSRF-TOKEN': '{{ csrf_token() }}' // Tambahkan CSRF token untuk keamanan
-                    },
-                    body: JSON.stringify({ status: newStatus })
-                });
-
-                if (!response.ok) {
-                    throw new Error('Failed to update status');
-                }
-
-                const result = await response.json();
-                alert(result.message); // Tampilkan pesan sukses
-
-                // Update tampilan tombol
-                if (newStatus === 'active') {
-                    button.classList.remove("btn-danger");
-                    button.classList.add("btn-success");
-                    button.innerText = textOn;
-                } else {
-                    button.classList.remove("btn-success");
-                    button.classList.add("btn-danger");
-                    button.innerText = textOff;
-                }
-            } catch (error) {
-                console.error('Error:', error);
-                alert('Failed to update status');
             }
-        }
 
-        // Panggil fungsi fetchDevices saat halaman dimuat
-        document.addEventListener('DOMContentLoaded', fetchDevices);
+            /**
+             * Mengubah status relay dengan mengirim request ke API.
+             * 
+             * @param {number} relayId - ID relay yang akan diubah.
+             * @param {number} currentState - Status saat ini (1 = ON, 0 = OFF).
+             */
+            function toggleDevice(relayId, currentState) {
+                const newState = currentState === 1 ? 0 : 1;
+                fetch(`${apiUrl}/update/${relayId}`, {
+                    method: "POST",
+                    headers: {
+                        "Content-Type": "application/json",
+                        "X-CSRF-TOKEN": document.querySelector("meta[name='csrf-token']").getAttribute("content")
+                    },
+                    body: JSON.stringify({ [`relay${relayId}`]: newState })
+                })
+                .then(response => response.json())
+                .then(() => fetchStatus()) // Refresh UI setelah update
+                .catch(error => console.error("Gagal memperbarui relay:", error));
+            }
+
+            // Ambil status perangkat saat halaman dimuat.
+            fetchStatus();
+        });
     </script>
 </body>
 </html>

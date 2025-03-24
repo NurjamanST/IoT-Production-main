@@ -23,7 +23,10 @@ class DatabaseSeeder extends Seeder
 
         $this->call([
             // SmartHomeSeeder::class
-            HomeRelaySeeder::class
+            HomeRelaySeeder::class,
+            FarmRelaySeeder::class,
+            // FarmSensorSeeder::class
+            // RfidInvalideSeeder::class
         ]);
     }
 }
