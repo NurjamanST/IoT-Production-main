@@ -25,7 +25,7 @@ class DatabaseSeeder extends Seeder
             // SmartHomeSeeder::class
             HomeRelaySeeder::class,
             FarmRelaySeeder::class,
-            // FarmSensorSeeder::class
+            FarmSensorSeeder::class
             // RfidInvalideSeeder::class
         ]);
     }

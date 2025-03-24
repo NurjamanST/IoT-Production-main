@@ -2,8 +2,9 @@
 
 namespace Database\Seeders;
 
-use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+use App\Models\FarmSensor;
 use Illuminate\Database\Seeder;
+use Illuminate\Database\Console\Seeds\WithoutModelEvents;
 
 class FarmSensorSeeder extends Seeder
 {
@@ -13,5 +14,8 @@ class FarmSensorSeeder extends Seeder
     public function run(): void
     {
         //
+        FarmSensor::create([
+            'soil_moisture' => '80',
+        ]);
     }
 }

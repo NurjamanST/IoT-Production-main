@@ -49,11 +49,11 @@
         <!-- Kondisi POMPA -->
         <div class="col-12 col-sm-6 col-md-4 col-lg-3 mx-5">
             <div class="border p-3 rounded shadow">
-                <h5 class="alert alert-primary">KONDISI POMPA</h5>
+                <h5 class="alert alert-primary">KONDISI POMPA: NYALA</h5>
                 <img src="image/Icons/pompa.png" alt="Kipas" class="img-fluid">
-                <div class="my-2 col-12">
-                    <p class="btn btn-success mt-3 col-auto"><i class="bi bi-lightbulb-fill"></i> NYALA</p>
-                    <a href="#" class="btn btn-primary col-auto"><i class="bi bi-bucket-fill"></i> Klik Siram Disini</a>
+                <div class="mt-4 mb-2">
+                    {{-- <p class="btn btn-success mt-3 col-auto"><i class="bi bi-lightbulb-fill"></i> NYALA</p>
+                    <a href="#" class="btn btn-primary col-auto"><i class="bi bi-bucket-fill"></i> Klik Siram Disini</a> --}}
                     <p class="btn btn-warning col-auto"><small><i class="bi bi-calendar-week"></i>  Update Data : 2025-03-01 16:54:55</small></p>
                 </div>
             </div>

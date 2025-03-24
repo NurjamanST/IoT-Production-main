@@ -15,7 +15,7 @@ class FarmRelaySeeder extends Seeder
     {
         //
         FarmRelay::create([
-            'status' => 'active',
+            'status_pompa' => '0',
         ]);
     }
 }

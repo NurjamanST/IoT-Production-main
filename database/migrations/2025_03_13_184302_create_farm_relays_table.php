@@ -13,7 +13,8 @@ return new class extends Migration
     {
         Schema::create('farm_relays', function (Blueprint $table) {
             $table->id();
-            $table->enum('status', ['active', 'not active']);
+            // $table->enum('status', ['active', 'not active']);
+            $table->boolean('status_pompa');
             $table->timestamps();
         });
     }
